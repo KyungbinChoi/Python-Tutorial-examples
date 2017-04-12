@@ -4,7 +4,7 @@ class Dice:
     def roll(self):
         import random
         self.number = random.choice(range(1,7))
-    def get_dice(self):
+    def getDice(self):
         return  self.number
     def __str__(self):
         return str(self.number)

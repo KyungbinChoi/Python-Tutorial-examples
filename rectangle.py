@@ -3,18 +3,6 @@ class Rectangle:
     def __init__(self, width = 1 , height = 1):
         self.width = width
         self.height = height
-    """
-    'using input() / try & except
-    def __init__(self):
-        try:
-            self.width = int(input())
-        except ValueError:
-            self.width = 1
-        try:
-            self.height = int(input())
-        except ValueError:
-            self.height = 1
-    """
     def setWidth(self, width):
         self.width = width
     def setHeight(self, height):
@@ -37,3 +25,12 @@ class Rectangle:
 
     def __str__(self):
         return "Width: "+str(self.width) +"\n"+"Height: "+str(self.height)
+
+
+class Square(Rectangle):
+    def __init__(self, width =1):
+        self.width = width
+        self.height = width
+
+    def __str__(self):
+        return "The square's Width = Height = " + str(self.width)
